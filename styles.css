@@ -665,3 +665,23 @@ p {margin: 0 0 1rem;}
     font-size: 0.92rem;
 }
 .site-footer p {margin: 0.2rem 0;}
+
+@media (max-width: 900px) {
+  .intro,
+  .home-top {grid-template-columns: 1fr;}
+  .card-grid {grid-template-columns: 1fr;}
+  .intro-image {
+    min-height: 200px;
+    max-height: 260px;
+  }
+  .track {grid-auto-columns: calc((100% - 1rem) / 2);}
+  .facts {border-radius: 24px;}
+}
+
+@media (max-width: 720px) {
+  .facts dl {columns: 1;}
+  .article {padding: 1.3rem;}
+  .track {grid-auto-columns: 78%;}
+  .carousel {grid-template-columns: 1fr;}
+  .arrow {display: none;}
+}
